@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Contact_Survey_Query</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Contact Survey Query</shortDescription>
+        <value>SELECT Id,Language__c FROM Contact WHERE Survey_Date__c &lt;= today</value>
+    </labels>
+    <labels>
+        <fullName>English_Survey_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>English_Survey_Template</shortDescription>
+        <value>English_Survey_Template</value>
+    </labels>
+    <labels>
+        <fullName>German_Language_Code</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>German Language Code</shortDescription>
+        <value>DE</value>
+    </labels>
+    <labels>
+        <fullName>German_Survey_Template</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>German_Survey_Template</shortDescription>
+        <value>German_Survey_Template</value>
+    </labels>
+    <labels>
+        <fullName>N26_Bank</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>N26 Bank</shortDescription>
+        <value>N26 Bank</value>
+    </labels>
+</CustomLabels>

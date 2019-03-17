@@ -1,0 +1,35 @@
+<aura:component controller="ProductInfoCtrl" implements="flexipage:availableForRecordHome,force:hasRecordId">
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:attribute name="productData" type="ProductInfoCtrl.ProductWrapper" />
+    <aura:attribute name="recordId" type="String" default=""/>
+    <lightning:card class="slds-page-header slds-p-around_none slds-m-around_none">
+        <lightning:layout>
+            <lightning:layoutItem flexibility="shrink">
+                <span>Product : {!v.productData.product}</span>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+            <lightning:layoutItem flexibility="shrink">
+                <span>Home Country : {!v.productData.country}</span>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+            <lightning:layoutItem flexibility="shrink">
+                <span>Cost per Calendar Month : {!v.productData.costPerMonth}</span>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+            <lightning:layoutItem flexibility="shrink">
+                <span>ATM Fee : {!v.productData.atmFee}</span>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <lightning:layout>
+            <lightning:layoutItem flexibility="shrink">
+                <span>Card Replacement Cost : {!v.productData.cardReplacementCost}</span>
+            </lightning:layoutItem>
+        </lightning:layout>
+        <aura:set attribute="actions">
+            <lightning:button label="Refresh" onclick="{! c.handleClick}"/>
+        </aura:set>
+    </lightning:card>
+</aura:component>
